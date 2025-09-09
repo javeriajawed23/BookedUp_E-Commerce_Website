@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookedUp - Login</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    /* ===== Login Page ===== */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .login-section {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .login-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+      max-width: 900px;
+      width: 100%;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+      padding: 40px;
+    }
+
+    /* Form Box */
+    .login-form-box {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .login-form-box h2 {
+      font-size: 2rem;
+      color: #6c5dd4;
+      margin-bottom: 10px;
+    }
+
+    .login-form-box p {
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    .login-form .form-group {
+      margin-bottom: 20px;
+    }
+
+    .login-form label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    .login-form input {
+      width: 100%;
+      padding: 14px 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .login-form button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      background: #6c5dd4;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-form button:hover {
+      background: #5742c3;
+    }
+
+    .login-footer {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 0.95rem;
+    }
+
+    .login-footer a {
+      color: #6c5dd4;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .login-footer a:hover {
+      color: #5742c3;
+    }
+
+    /* Image */
+    .login-image {
+      flex: 1;
+      min-width: 250px;
+      max-width: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-image img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .login-container {
+        flex-direction: column-reverse;
+        gap: 20px;
+      }
+
+      .login-image img {
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Login Section -->
+  <section class="login-section">
+    <div class="login-container">
+      <!-- Form -->
+      <div class="login-form-box">
+        <h2>Login to BookedUp</h2>
+        <p>Enter your credentials to access your account</p>
+        <form class="login-form">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required />
+          </div>
+          <button type="submit">Login</button>
+        </form>
+        <div class="login-footer">
+          Don't have an account? <a href="signup.html">Sign Up</a>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="login-image">
+        <img src="images/girl-login.png" alt="Login Illustration" />
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
