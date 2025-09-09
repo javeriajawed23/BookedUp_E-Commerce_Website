@@ -59,5 +59,3 @@ cd BookedUp_E-Commerce_Website
 ## 📄 License
 
 This project is open source and free to use for personal and educational purposes.
-
-```
