@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookedUp - Browse Books</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon/favicon-32x32.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-container">
+        <div class="logo">
+          <img src="images/logo.png" alt="BookedUp Logo" />
+          <h1>BookedUp</h1>
+        </div>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="books.html" class="active">Books</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-icons">
+          <a href="cart.html" class="cart-btn"
+            ><i class="fa-solid fa-cart-shopping"></i
+            ><span class="cart-count">0</span></a
+          >
+          <a href="login.html" class="user-btn"
+            ><i class="fa-solid fa-user"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="books-hero">
+      <div class="container">
+        <h1>Explore Our Collection</h1>
+        <p>Browse by category and find your next favorite read.</p>
+      </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="books-filter">
+      <div class="container">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="Fiction">Fiction</button>
+        <button class="filter-btn" data-category="Fantasy">Fantasy</button>
+        <button class="filter-btn" data-category="Mystery">Mystery</button>
+        <button class="filter-btn" data-category="Romance">Romance</button>
+        <button class="filter-btn" data-category="Adventure">Adventure</button>
+        <button class="filter-btn" data-category="Science">Science</button>
+      </div>
+    </section>
+
+    <!-- Books Grid -->
+    <section class="books-grid-section">
+      <div class="container">
+        <div class="books-grid" id="books-grid">
+          <!-- JS will populate books here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-about">
+          <h3>About BookedUp</h3>
+          <p>
+            Your one-stop modern bookstore. Discover, buy, and enjoy books with
+            ease and style.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Info</h3>
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i> 832 Thompson Drive, San
+              Francisco, CA 94107, USA
+            </li>
+            <li><i class="fa-solid fa-phone"></i> +1 234 567 890</li>
+            <li><i class="fa-solid fa-envelope"></i> support@bookedup.com</li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h3>Newsletter</h3>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="footer-bottom">© 2025 BookedUp. All rights reserved.</p>
+    </footer>
+    <script src="js/books.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
